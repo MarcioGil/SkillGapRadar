@@ -2,9 +2,11 @@
 
 ## 1. Introdução
 
-Este documento tem como propósito fornecer uma visão técnica abrangente do projeto **SkillGapRadar**. Ele aborda os conceitos fundamentais, a arquitetura conceitual, as funcionalidades esperadas e as considerações de implementação para um sistema de análise de lacunas de habilidades. O objetivo principal do SkillGapRadar é auxiliar organizações na identificação, quantificação e visualização das disparidades entre as habilidades existentes em sua força de trabalho e as habilidades necessárias para alcançar seus objetivos estratégicos.
+Este documento apresenta uma **visão técnica abrangente e estratégica** do projeto **SkillGapRadar**, uma solução inovadora para a análise de lacunas de habilidades. Com o objetivo de capacitar organizações a identificar, quantificar e visualizar as disparidades entre as competências atuais de sua força de trabalho e as habilidades essenciais para o sucesso futuro, o SkillGapRadar oferece *insights* acionáveis para o desenvolvimento de talentos e o planejamento estratégico.
 
-O público-alvo deste documento inclui desenvolvedores, arquitetos de sistemas, gerentes de projeto, analistas de negócios e quaisquer partes interessadas que buscam compreender a estrutura e o funcionamento de uma solução de análise de lacunas de habilidades.
+Neste relatório, exploramos os conceitos fundamentais da análise de lacunas, a arquitetura conceitual do sistema, suas funcionalidades esperadas e as considerações cruciais para sua implementação. Nosso foco é demonstrar o potencial do SkillGapRadar como uma ferramenta indispensável para a gestão de talentos em um mercado em constante transformação.
+
+Este documento é direcionado a líderes de tecnologia, gestores de RH, arquitetos de sistemas, desenvolvedores e analistas de negócios que buscam compreender a fundo a estrutura, o funcionamento e o valor estratégico de uma solução robusta para a gestão de habilidades.
 
 ## 2. Conceitos Fundamentais
 
@@ -46,20 +48,15 @@ O fluxo de dados conceitual se inicia com a ingestão de dados pelo Módulo de C
 
 ### Coleta de Dados
 
-*   **Fontes de Dados:** O sistema deve ser capaz de se conectar a diversas fontes de dados, como bancos de dados de RH, arquivos de currículos (PDF, DOCX), plataformas de recrutamento e sistemas de avaliação de desempenho.
-*   **Métodos de Ingestão:** A ingestão de dados pode ser realizada por meio de APIs, upload de arquivos ou conexões diretas a bancos de dados.
+A **Coleta de Dados** é a base do SkillGapRadar, permitindo a ingestão de informações de diversas fontes. O sistema é projetado para se integrar a bancos de dados de RH, processar arquivos de currículos (PDF, DOCX), e conectar-se a plataformas de recrutamento e sistemas de avaliação de desempenho. A ingestão pode ser realizada por meio de APIs robustas, upload de arquivos ou conexões diretas a bancos de dados, garantindo flexibilidade e abrangência na aquisição de dados.
 
 ### Análise de Habilidades
 
-*   **Identificação de Habilidades:** Utilizando técnicas de PLN, o sistema extrai habilidades de textos não estruturados, como descrições de cargos e currículos. Ontologias de habilidades podem ser usadas para padronizar e categorizar as competências identificadas.
-*   **Mapeamento de Habilidades:** As habilidades extraídas são mapeadas em modelos de competência predefinidos ou personalizados, que representam os requisitos de habilidades para diferentes funções ou projetos.
-*   **Detecção de Lacunas:** O sistema compara as habilidades dos funcionários com as habilidades requeridas, identificando e quantificando as lacunas existentes.
+O **Módulo de Análise de Habilidades** emprega técnicas avançadas de Processamento de Linguagem Natural (PLN) para extrair e identificar habilidades de textos não estruturados, como descrições de cargos e currículos. A padronização e categorização das competências são asseguradas pelo uso de ontologias de habilidades. As habilidades identificadas são então mapeadas em modelos de competência predefinidos ou personalizados, que articulam os requisitos para diversas funções ou projetos. Finalmente, o sistema realiza a **Detecção de Lacunas**, comparando as habilidades dos colaboradores com os requisitos, quantificando as deficiências e fornecendo uma base sólida para intervenções estratégicas.
 
 ### Visualização e Relatórios
 
-*   **Dashboard tipo Radar:** O principal recurso de visualização é um gráfico de radar que exibe as habilidades requeridas versus as habilidades existentes para um indivíduo ou equipe, destacando as áreas de deficiência.
-*   **Relatórios de Lacunas:** Geração de relatórios detalhados sobre as lacunas de habilidades, permitindo a análise em diferentes níveis (individual, equipe, departamento).
-*   **Recomendações de Treinamento:** Com base nas lacunas identificadas, o sistema pode sugerir planos de treinamento e desenvolvimento para os funcionários.
+A **Visualização e Geração de Relatórios** são cruciais para a usabilidade do SkillGapRadar. O principal recurso visual é o **Dashboard tipo Radar**, que de forma intuitiva exibe as habilidades requeridas versus as habilidades existentes para indivíduos ou equipes, evidenciando as áreas de maior deficiência. Complementarmente, o sistema gera **Relatórios de Lacunas** detalhados, permitindo análises em múltiplos níveis (individual, equipe, departamento). Com base nas lacunas identificadas, o SkillGapRadar pode ainda oferecer **Recomendações de Treinamento** personalizadas, orientando o desenvolvimento contínuo dos colaboradores.
 
 
 
